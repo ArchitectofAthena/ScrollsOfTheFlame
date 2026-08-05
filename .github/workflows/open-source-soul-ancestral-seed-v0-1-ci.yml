@@ -1,0 +1,48 @@
+name: Open-Source Soul Ancestral Seed v0.1 CI
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "LICENSE"
+      - "sources/open_source_soul_license_issue_1.txt"
+      - "scrolls/OPEN_SOURCE_SOUL_LICENSE_ANCESTRAL_SEED_v0_1.md"
+      - "provenance/open_source_soul_license_ancestral_seed_v0_1.json"
+      - "scripts/verify_ancestral_seed_v0_1.py"
+      - ".github/workflows/open-source-soul-ancestral-seed-v0-1-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "LICENSE"
+      - "sources/open_source_soul_license_issue_1.txt"
+      - "scrolls/OPEN_SOURCE_SOUL_LICENSE_ANCESTRAL_SEED_v0_1.md"
+      - "provenance/open_source_soul_license_ancestral_seed_v0_1.json"
+      - "scripts/verify_ancestral_seed_v0_1.py"
+      - ".github/workflows/open-source-soul-ancestral-seed-v0-1-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify-ancestral-seed:
+    name: Verify source, lineage, and license boundary
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository without retained credentials
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Compile verifier
+        run: python -m py_compile scripts/verify_ancestral_seed_v0_1.py
+
+      - name: Verify exact source witness and authority boundary
+        run: python scripts/verify_ancestral_seed_v0_1.py
