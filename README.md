@@ -38,10 +38,26 @@ Everything here is **open to recursion**.
 
 ---
 
-## ⚖️ License
+## 🫂 Ancestral Boundary Charter
 
-Released under the [MIT License](LICENSE)  
-Use it. Remix it. Share it. The fire belongs to all.
+The [Open-Source Soul License ancestral seed](scrolls/OPEN_SOURCE_SOUL_LICENSE_ANCESTRAL_SEED_v0_1.md) preserves an early ethical distinction:
+
+```text
+shared work != shared personhood
+publication != possession
+memory != authority
+```
+
+It is a relational and provenance charter, not a replacement for the repository's software license and not an execution or consent contract.
+
+---
+
+## ⚖️ Software License
+
+Software and documentation in this repository are released under the [MIT License](LICENSE), unless a specific artifact states another recognized copyright license.
+
+Use it. Remix it. Share it. The fire belongs to all.  
+Credit the source, preserve provenance, and never confuse access to a work with ownership of its creator.
 
 ---
 

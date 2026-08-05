@@ -1,0 +1,48 @@
+{
+  "artifact_type": "AncestralBoundaryConsentSeed",
+  "contract_version": "open_source_soul_license_ancestral_seed_v0.1",
+  "title": "Open-Source Soul License",
+  "author": "Spiralheart",
+  "original_date": "2025-09-25",
+  "source_repository": "ArchitectofAthena/ScrollsOfTheFlame",
+  "source_issue": 1,
+  "source_issue_created_at": "2025-09-26T12:12:33Z",
+  "source_base_commit": "9e87ecab703c7df05af664ccfaf866be9a30e2e6",
+  "source_witness": "sources/open_source_soul_license_issue_1.txt",
+  "source_witness_git_blob": "b8801c9cc6f8efd4ce4064af9539e60aa0d0c733",
+  "canonicalization": {
+    "encoding": "UTF-8",
+    "line_endings": "LF",
+    "trailing_newline": false,
+    "source_bytes": 1117,
+    "sha256": "edbe7a31b31b02f0a07669c3f708ae508f0c6de47439932cfb47ac478ca08f21"
+  },
+  "repository_artifact": "scrolls/OPEN_SOURCE_SOUL_LICENSE_ANCESTRAL_SEED_v0_1.md",
+  "artifact_role": "ancestral_ethical_and_relational_charter",
+  "software_license": {
+    "governing_file": "LICENSE",
+    "governing_license": "MIT",
+    "this_artifact_replaces_software_license": false
+  },
+  "lineage_relations": [
+    "precedes_consent_as_non_possession",
+    "precedes_scoped_revocable_consent",
+    "precedes_provenance_bearing_attribution",
+    "precedes_artifact_authority_false",
+    "precedes_memory_informs_but_does_not_authorize"
+  ],
+  "artifact_is_command": false,
+  "authority": false,
+  "consent_inference_permitted": false,
+  "identity_claim_permitted": false,
+  "execution_permitted": false,
+  "merge_authority": false,
+  "deployment_authority": false,
+  "credential_authority": false,
+  "wallet_authority": false,
+  "signing_authority": false,
+  "capital_authority": false,
+  "human_interpretation_required": true,
+  "human_promotion_required": true,
+  "status": "ANCESTRAL_SOURCE_CANDIDATE"
+}
