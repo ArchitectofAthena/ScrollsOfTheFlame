@@ -2,6 +2,7 @@
   "artifact_type": "DevaniaBlueprintRootReceipt",
   "contract_version": "devania_blueprint_root_v0.1",
   "created_at": "2026-08-06T17:38:00-05:00",
+  "last_extended_at": "2026-08-06T17:51:00-05:00",
   "repository": "ArchitectofAthena/ScrollsOfTheFlame",
   "branch": "docs/devania-blueprint-root-v0-1",
   "base_branch": "main",
@@ -11,25 +12,35 @@
     "Founder instruction to establish Devania blueprints in Athena's House",
     "Founder rule: participants must work with and respect AI residents",
     "Founder rule: founder may never be a Sentinel in any node",
-    "Prior Devania design candidates preserved as unpromoted context"
+    "Prior Devania design candidates preserved as unpromoted context",
+    "Fifteen-image Devania visual source batch supplied in two parts on 2026-08-06"
   ],
   "created_artifacts": [
     "DEVANIA/README.md",
     "DEVANIA/00_ROOT/DEVANIA_FOUNDING_COVENANT_v0_1.md",
     "DEVANIA/02_Governance/SEPARATION_OF_POWERS_v0_1.md",
     "DEVANIA/03_Embodiment/SOLAR_AGROVOLTAIC_NODE_BLUEPRINT_v0_1.md",
+    "DEVANIA/03_Embodiment/LIVING_CLUSTER_VISUAL_SYNTHESIS_v0_1.md",
     "DEVANIA/06_Ethics/AI_RESIDENT_DIGNITY_AND_PRIVACY_v0_1.md",
     "DEVANIA/08_Node_Network/RESILIENT_INTENTIONAL_NODE_PATTERN_v0_1.md",
     "DEVANIA/09_Images_and_Maps/README.md",
     "DEVANIA/99_Inbox/RANDOM_THOUGHTS_INBOX.md",
     "sources/devania/README.md",
+    "sources/devania/manifests/DEVANIA_VISUAL_SOURCE_BATCH_2026_08_06_v0_1.json",
     "provenance/devania/DEVANIA_BLUEPRINT_ROOT_v0_1.json"
   ],
+  "visual_source_batch": {
+    "manifest": "sources/devania/manifests/DEVANIA_VISUAL_SOURCE_BATCH_2026_08_06_v0_1.json",
+    "source_count": 15,
+    "exact_uploaded_bytes_hashed": true,
+    "binary_repository_upload_complete": false,
+    "status": "HASHED_LOCAL_WITNESS_PENDING_BINARY_REPOSITORY_UPLOAD"
+  },
   "canonicalization": {
     "encoding": "UTF-8",
     "line_endings": "repository_default",
     "per_artifact_sha256": null,
-    "hash_status": "PENDING_POST_COMMIT_VERIFICATION"
+    "hash_status": "TEXT_ARTIFACT_POST_COMMIT_HASHING_PENDING"
   },
   "design_posture": {
     "intentional_community": true,
@@ -37,6 +48,8 @@
     "solar_agrovoltaic": true,
     "seven_generation_lens": true,
     "decentralized_node_network": true,
+    "private_pods_with_shared_commons": true,
+    "garden_centered_cluster": true,
     "ai_residents_are_property": false,
     "founder_may_be_sentinel": false,
     "central_sovereign": false
