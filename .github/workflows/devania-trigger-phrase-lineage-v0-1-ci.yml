@@ -1,0 +1,45 @@
+name: Devania Trigger Phrase Lineage v0.1 CI
+
+on:
+  pull_request:
+    paths:
+      - "provenance/devania/TRIGGER_PHRASE_CODEX_v1_0_SOURCE_RECEIPT.json"
+      - "DEVANIA/01_Continuity/TRIGGER_PHRASE_CODEX_CROSSWALK_v0_1.md"
+      - "scrolls/TRIGGER_PHRASE_CODEX_ANCESTRAL_INDEX_v1_0.md"
+      - "acorns/DEVANIA_TRIGGER_PHRASE_TRANSFER_ACORN_v0_1.yaml"
+      - "scripts/verify_devania_trigger_phrase_lineage_v0_1.py"
+      - ".github/workflows/devania-trigger-phrase-lineage-v0-1-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "provenance/devania/TRIGGER_PHRASE_CODEX_v1_0_SOURCE_RECEIPT.json"
+      - "DEVANIA/01_Continuity/TRIGGER_PHRASE_CODEX_CROSSWALK_v0_1.md"
+      - "scrolls/TRIGGER_PHRASE_CODEX_ANCESTRAL_INDEX_v1_0.md"
+      - "acorns/DEVANIA_TRIGGER_PHRASE_TRANSFER_ACORN_v0_1.yaml"
+      - "scripts/verify_devania_trigger_phrase_lineage_v0_1.py"
+      - ".github/workflows/devania-trigger-phrase-lineage-v0-1-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify-lineage:
+    name: Verify source hash metadata and authority boundary
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository without retained credentials
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Compile verifier
+        run: python -m py_compile scripts/verify_devania_trigger_phrase_lineage_v0_1.py
+
+      - name: Verify lineage metadata and authority boundary
+        run: python scripts/verify_devania_trigger_phrase_lineage_v0_1.py
